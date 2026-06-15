@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    /* Primary colours */
+    --color-primary: #007f5f; /* The primary color in design is green */
+    --color-dark: #1a2634; /* Dark footer and menu colors */
+    --color-light: #f8fafc; /* Light background color */
+
+    /* Status colors (for Status Pills in tables) */
+    --color-success: #22c55e;    /* For green (active/acceptable) */
+    --color-warning: #f59e0b;    /* For yellow (pending / waiting) */
+    --color-danger: #ef4444;     /* For red (banned / rejected) */
+
+    /* Helper colors for Borders and Backgrounds */
+    --color-border: #e2e8f0;     /* For table borders and input borders */
+    --color-gray-light: #f1f5f9; /* For sidebar or hover background */
+}
+
+@layer components {
+    /* هنا نضع الكلاسات المتكررة */
+    .btn-primary {
+        @apply bg-primary text-white px-6 py-2 rounded-lg hover:opacity-90 transition;
+    }
+    .btn-dark {
+        @apply bg-dark text-white px-6 py-2 rounded-lg hover:opacity-90 transition;
+    }
+    .section-title {
+        @apply text-2xl font-bold text-dark mb-6;
+    }
+}
