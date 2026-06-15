@@ -10,6 +10,16 @@ module.exports = {
       fontFamily: {
         cairo: ['var(--font-cairo)', 'sans-serif'],
       },
+      colors: {
+        primary: 'var(--color-primary)',
+        dark: 'var(--color-dark)',
+        light: 'var(--color-light)',
+        success: 'var(--color-success)',
+        warning: 'var(--color-warning)',
+        danger: 'var(--color-danger)',
+        border: 'var(--color-border)',
+        gray_light: 'var(--color-gray-light)',
+      }
     },
   },
   plugins: [],
