@@ -13,7 +13,7 @@ const TopCourses = () => {
 
     return (
         <section className="container mx-auto px-6 py-12">
-            <TitleSection nameTitle="أعلى الدورات" path="/courses" />
+            <TitleSection nameTitle="أعلى الدورات" />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {teachers.map((teacher) => (
                     <TeacherCard key={teacher.id} teacher={teacher} />

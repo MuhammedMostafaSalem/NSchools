@@ -13,7 +13,7 @@ const Features = () => {
     return (
         <section className="py-16">
             <div className="container mx-auto px-6">
-                <TitleSection nameTitle="لماذا تختارنا؟" path="" />
+                <TitleSection nameTitle="لماذا تختارنا؟" />
                 <div className="grid md:grid-cols-3 gap-8">
                     {features.map((f, i) => (
                         <div key={i} className="text-center flex flex-col items-center gap-4 p-6 bg-white rounded-lg shadow-card">
