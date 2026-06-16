@@ -27,7 +27,10 @@ const CourseDetails = () => {
             <CourseOutline />
 
             {/* Reviews */}
-            <CourseReviews />
+
+            <div className="bg-white rounded-lg shadow-card ">
+                <CourseReviews />
+            </div>
         </main>
     )
 }
