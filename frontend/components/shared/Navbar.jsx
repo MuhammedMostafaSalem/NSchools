@@ -19,7 +19,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className="fixed top-0 left-0 right-0 z-50 w-full bg-white border-b border-border py-4">
+        <div className="fixed top-0 left-0 right-0 z-50 w-full bg-white border-b border-gray-200 py-4 shadow-navbar">
             <div className="container mx-auto px-6 flex justify-between items-center">
                 {/* Logo */}
                 <Link href="/" className="flex items-center">
@@ -28,9 +28,9 @@ const Navbar = () => {
 
                 {/* Navigation Links (Responsive) */}
                 <ul className={`
-                    flex flex-col md:flex-row items-center gap-6 md:gap-8 text-dark font-medium
+                    flex flex-col md:flex-row items-center gap-6 md:gap-8 text-secondary font-medium
                     absolute md:static top-full left-0 w-full md:w-auto
-                    bg-white md:bg-transparent p-6 md:p-0 shadow-lg md:shadow-none
+                    bg-white md:bg-transparent p-6 md:p-0 shadow-card md:shadow-none
                     overflow-hidden
                     transition-all duration-300 ease-in-out origin-top
                     ${
@@ -57,7 +57,7 @@ const Navbar = () => {
                     <li className="w-full md:hidden mt-4 list-none">
                         <hr className="mb-2" />
                         <div className="flex flex-col gap-3">
-                            <Link href="/login" className="btn-dark text-center">
+                            <Link href="/login" className="btn-secondary text-center">
                                 تسجيل الدخول
                             </Link>
                             <Link href="/register" className="btn-primary text-center">
@@ -69,12 +69,12 @@ const Navbar = () => {
 
                 {/* Desktop Auth Buttons */}
                 <div className="hidden md:flex items-center gap-4">
-                    <Link href="/login" className="btn-dark">تسجيل الدخول</Link>
+                    <Link href="/login" className="btn-secondary">تسجيل الدخول</Link>
                     <Link href="/register" className="btn-primary">إنشاء حساب</Link>
                 </div>
 
                 {/* Mobile Menu Button */}
-                <button className="md:hidden text-dark text-[25px]" onClick={() => setIsOpen(!isOpen)}>
+                <button className="md:hidden text-secondary text-[25px]" onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ? <MdClose /> : <MdMenu />}
                 </button>
             </div>
