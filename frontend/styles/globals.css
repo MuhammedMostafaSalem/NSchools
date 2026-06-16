@@ -56,3 +56,11 @@
         @apply text-2xl font-bold text-secondary mb-6;
     }
 }
+
+.auth-bg-image {
+    background-color: var(--color-background);
+    background-image: url('/assets/images/bg-auth.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
