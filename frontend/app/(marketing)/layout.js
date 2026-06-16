@@ -5,7 +5,7 @@ export default function MarketingLayout({ children }) {
     return (
         <>
             <Navbar />
-            <main className="min-h-screen">{children}</main>
+            {children}
             <Footer />
         </>
     );
