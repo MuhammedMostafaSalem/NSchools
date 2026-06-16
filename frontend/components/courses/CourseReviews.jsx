@@ -1,6 +1,6 @@
 const CourseReviews = () => {
     return (
-        <section className="bg-white rounded-lg shadow-card p-6 flex flex-col space-y-6">
+        <section className="p-6 flex flex-col space-y-6">
             <h2 className="text-xl md:text-2xl font-bold text-primary-dark">التقييمات</h2>
 
             <div className="space-y-5">
