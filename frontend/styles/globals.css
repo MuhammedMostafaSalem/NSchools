@@ -3,19 +3,43 @@
 @tailwind utilities;
 
 :root {
-    /* Primary colours */
-    --color-primary: #007f5f; /* The primary color in design is green */
-    --color-dark: #1a2634; /* Dark footer and menu colors */
-    --color-light: #f8fafc; /* Light background color */
+    /* Primary */
+    --color-primary: #2C7681;
+    --color-primary-light: #5B90A0;
+    --color-primary-dark: #1B364B;
 
-    /* Status colors (for Status Pills in tables) */
-    --color-success: #22c55e;    /* For green (active/acceptable) */
-    --color-warning: #f59e0b;    /* For yellow (pending / waiting) */
-    --color-danger: #ef4444;     /* For red (banned / rejected) */
+    /* Secondary */
+    --color-secondary: #143546;
+    --color-secondary-light: #20537E;
+    --color-secondary-dark: #162135;
 
-    /* Helper colors for Borders and Backgrounds */
-    --color-border: #e2e8f0;     /* For table borders and input borders */
-    --color-gray-light: #f1f5f9; /* For sidebar or hover background */
+    /* Background */
+    --color-background: #FDFDFD;
+    --color-background-alt: #E9F1F0;
+    --color-background-soft: #E5F0F1;
+
+    /* Gray */
+    --color-gray-100: #E9F1F0;
+    --color-gray-200: #D7DCDB;
+    --color-gray-300: #C0C5C3;
+    --color-gray-400: #ABB6B7;
+    --color-gray-500: #A2A6A5;
+    --color-gray-600: #818A89;
+    --color-gray-700: #454445;
+    --color-gray-800: #2B3849;
+
+    /* Accent */
+    --color-warning: #ECC852;
+    --color-accent: #D1BA90;
+    --color-purple: #6F5266;
+
+    /* Radius */
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 16px;
+
+    --shadow-card: 0 4px 20px rgba(0,0,0,.08);
+    --shadow-navbar: 0 2px 10px rgba(0,0,0,.05);
 }
 
 @layer components {
@@ -23,10 +47,12 @@
     .btn-primary {
         @apply bg-primary text-white px-6 py-2 rounded-lg hover:opacity-90 transition;
     }
-    .btn-dark {
-        @apply bg-dark text-white px-6 py-2 rounded-lg hover:opacity-90 transition;
+
+    .btn-secondary {
+        @apply bg-secondary text-white px-6 py-2 rounded-lg hover:opacity-90 transition;
     }
+
     .section-title {
-        @apply text-2xl font-bold text-dark mb-6;
+        @apply text-2xl font-bold text-secondary mb-6;
     }
 }
