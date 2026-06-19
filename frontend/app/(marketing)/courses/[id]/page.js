@@ -3,7 +3,7 @@ import CourseSubscribe from "@/components/courses/CourseSubscribe";
 
 export default function CourseDetailsPage() {
     return (
-        <main className="bg-background min-h-screen mt-[80px]">
+        <main className="bg-background min-h-screen">
             <div className="container mx-auto px-4 py-10">
                 {/* Title */}
                 <h1 className="text-xl md:text-3xl lg:text-4xl font-bold text-primary text-center mb-10">

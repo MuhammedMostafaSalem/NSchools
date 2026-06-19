@@ -1,15 +1,19 @@
 import HeroSection from "@/components/home/HeroSection";
-import FeaturedTeachers from "@/components/home/FeaturedTeachers";
-import TopCourses from "@/components/home/TopCourses";
-import Features from "@/components/home/Features";
+import HomeTeachers from "@/components/home/HomeTeachers";
+import HomeCourses from "@/components/home/HomeCourses";
+import HomeFeatures from "@/components/home/HomeFeatures";
+import WhyNSchools from "@/components/home/WhyNSchools";
+import JoinStudentsSection from "@/components/home/JoinStudentsSection";
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
-      <FeaturedTeachers />
-      <TopCourses />
-      <Features />
+      <HomeCourses />
+      <HomeTeachers />
+      <HomeFeatures />
+      <WhyNSchools />
+      <JoinStudentsSection />
     </main>
   );
 }
