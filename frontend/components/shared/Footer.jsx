@@ -4,7 +4,7 @@ import logo from "@/public/assets/images/Logo_Light.png"
 
 const Footer = () => {
     return (
-        <footer className="bg-secondary-dark text-white py-12">
+        <footer className="section bg-secondary-dark text-white py-12">
             <div className="container mx-auto px-6 grid md:grid-cols-4 gap-8">
                 <div className="col-span-2">
                     <Image src={logo}
