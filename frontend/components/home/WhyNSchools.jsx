@@ -74,8 +74,6 @@ export default function WhyNSchools() {
                         <Image
                             src={graduationCap}
                             alt="Graduation Cap"
-                            width={260}
-                            height={220}
                             priority
                             className="h-auto w-[180px] md:w-[220px] lg:w-[260px]"
                         />
