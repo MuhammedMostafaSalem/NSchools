@@ -7,6 +7,7 @@ import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 import img from "@/public/assets/images/teacher.jpg"
 import TeacherCard from "../ui/TeacherCard";
+import CourseCard from "../ui/CourseCard";
 
 const TeacherProfile = ({ courses }) => {
     return (
@@ -103,7 +104,7 @@ const TeacherProfile = ({ courses }) => {
 
                 <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
                     {courses.map((course) => (
-                        <TeacherCard key={course.id} teacher={course} />
+                        <CourseCard key={course.id} course={course} />
                     ))}
                 </div>
             </div>
