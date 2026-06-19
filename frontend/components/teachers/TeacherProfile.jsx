@@ -7,7 +7,6 @@ import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 import img from "@/public/assets/images/teacher.jpg"
 import TeacherCard from "../ui/TeacherCard";
-import TitleSection from "../shared/TitleSection";
 
 const TeacherProfile = ({ courses }) => {
     return (
@@ -100,7 +99,7 @@ const TeacherProfile = ({ courses }) => {
 
             {/* Courses */}
             <div className="p-8">
-                <TitleSection nameTitle="Courses By Sertin Aplma" />
+                <h2 className="text-xl md:text-2xl font-bold text-primary-dark mb-8">Courses By Sertin Aplma</h2>
 
                 <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
                     {courses.map((course) => (
