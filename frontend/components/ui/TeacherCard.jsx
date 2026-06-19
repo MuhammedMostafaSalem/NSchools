@@ -9,9 +9,7 @@ const TeacherCard = ({ teacher }) => {
                 <Image
                     src={teacher.image}
                     alt={teacher.name}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
-                    className="object-cover "
+                    className="object-cover w-full h-52 sm:h-56 md:h-60 "
                 />
             </div>
             <div className="p-4 flex flex-col text-center gap-2">
