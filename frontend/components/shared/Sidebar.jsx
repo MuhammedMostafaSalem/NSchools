@@ -9,7 +9,7 @@ import {
 } from "react-icons/lu";
 import Image from "next/image";
 import logo from "@/public/assets/images/Logo.png"
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
 const Sidebar = ({
@@ -17,6 +17,7 @@ const Sidebar = ({
     collapsed, setCollapsed
 }) => {
     const pathname = usePathname();
+    const router = useRouter()
 
     const menu = [
         {
@@ -27,7 +28,7 @@ const Sidebar = ({
         {
             name: "الدورات",
             icon: LuBookOpenText,
-            path: ""
+            path: "/student/courses"
         },
         {
             name: "دوراتي",
@@ -112,6 +113,7 @@ const Sidebar = ({
                                     key={i}
                                     onClick={() => {
                                         setOpenSidebar(false);
+                                        router.push(item.path)
                                     }}
                                     className={`
                                     flex items-center
