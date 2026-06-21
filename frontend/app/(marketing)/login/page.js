@@ -1,4 +1,5 @@
 import LoginForm from "@/components/Auth/LoginForm";
+import Link from "next/link";
 
 export default function Login() {
     return (
@@ -10,6 +11,7 @@ export default function Login() {
                 <div className="bg-white rounded-lg shadow-card p-6">
 
                     <LoginForm />
+                    <Link href="/student/dashboard">student</Link>
                 </div>
             </div>
         </main>
